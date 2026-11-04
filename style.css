@@ -8,3 +8,24 @@
   object-position: center;
   border-radius: 6px;
 }
+
+/* ===== Life page — work & hobbies ===== */
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:start}
+.work-card img{aspect-ratio:4/3}
+.hobby-block{margin-top:2rem}
+.hobby-title{font-size:1.05rem;font-weight:700;color:var(--accent);margin:0 0 .8rem}
+.yoga-card img{aspect-ratio:16/9}
+.hiking-wide img{aspect-ratio:16/9}
+.hiking-verticals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start;margin-top:1rem}
+.hiking-verticals .photo-card img{aspect-ratio:3/4}
+
+/* ===== More page — ethnic gallery ===== */
+.ethnic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start}
+.ethnic-grid .photo-card img{aspect-ratio:3/4}
+
+@media(max-width:800px){
+  .work-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .hiking-verticals,.ethnic-grid{grid-template-columns:1fr;gap:.65rem}
+}
